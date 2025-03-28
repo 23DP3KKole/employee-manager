@@ -1,2 +1,2 @@
 # java-console
-project template for Java CLI app
+23DP3KKole/employee-manager

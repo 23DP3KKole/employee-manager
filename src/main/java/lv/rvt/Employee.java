@@ -1,5 +1,7 @@
 package lv.rvt;
 
+import java.io.File;
+
 public class Employee {
     private String name;
     private String ID;
@@ -27,4 +29,17 @@ public class Employee {
     public double getSalary(){
         return this.salary;
     }
+
+    public void createNewJson(String fileType){
+
+        if (fileType == "Employee"){
+            File employeeFile = new File("employeeList.json");
+        } else if (fileType == "Department"){
+            File departmentFile = new File("departmentFile.json");
+        } else if (fileType == "Salary history"){
+            File salaryHistoryfile = new File("salaryHistory.json");
+        }
+    }
+
+    
 }

@@ -7,11 +7,15 @@ public class Main
 {
     public static void main( String[] args )
     {
+        Scanner scanner = new Scanner(System.in);
+
         Employee myEmployee = new Employee("Kirill", "1", "Java developement", 10000);
 
+        Employee.consoleStart();
 
-        System.out.println(myEmployee.getName());
-
-        myEmployee.createNewJson("Employee");
+        Employee.consoleChoose();
+        String optionChosen = scanner.nextLine();
+        
+        myEmployee.dataHandling(optionChosen, myEmployee);
     }
 }

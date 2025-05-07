@@ -45,26 +45,4 @@ The application offers the following options through its main menu:
 16. **Delete Data File:** Allows you to choose and delete one of the data files (`employees.json`, `departments.json`, `salaries.json`). It prompts for confirmation before deletion and re-creates an empty file afterwards.
 17. **Exit:** Closes the application.
 
-## Getting Started
-
-### Prerequisites
-
-* **Java Development Kit (JDK):** Make sure you have Java installed on your system. You can download it from [Oracle's website](https://www.oracle.com/java/technologies/javase-downloads.html) or through your operating system's package manager.
-* **Maven:** This project uses Maven for dependency management and building. You can download and install it from [Apache Maven's website](https://maven.apache.org/download.cgi).
-
-### Running the Application
-
-1.  **Clone the Repository:** If you have the project files in a repository, clone it to your local machine.
-2.  **Navigate to the Project Directory:** Open your terminal or command prompt and navigate to the root directory of the project (where the `pom.xml` file is located).
-3.  **Build and Run:** Execute the following Maven command:
-
-    ```bash
-    mvn clean compile exec:java
-    ```
-
-    This command will:
-    * `clean`: Remove any previously built files.
-    * `compile`: Compile the Java source code.
-    * `exec:java`: Execute the main class (`com.yourpackage.App`) defined in the `pom.xml`.
-
 4.  **Follow the Menu:** Once the application starts, you will see the main menu in the console. Enter the number corresponding to the action you want to perform and follow the prompts.
